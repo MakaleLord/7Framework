@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Instagram </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <!--
+    Exercise 1: Design the Instagram header using Bootstrap.
+      Exercise 2: Fix the size issues in the header.
+        Exercise 3: Add the container for profile info.
+          Exercise 4: Create a grid of Instagram posts.
+
+            Bonus 1: Change the number of posts in a row based on the screen size.
+              Bonus 2: Hide the search bar and icons on smaller screen sizes.
+
+                -->
+
+  <body>
+    <div class="container-sm">
+      <div class="row" id="profile-info">
+        <div class="col" id="dp-container">
+        </div>
+        <div class="row" id="header">
+          <div class="col d-none d-sm-block" id="logo-container">
+            <img src="logo.png" class="img-fluid">
+          </div>
+          <div class="col d-none d-sm-block" id="search-container">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <div class="col" id="icons-container">
+            <img src="home.png" class="img-fluid">
+            <img src="message.png" class="img-fluid">
+            <img src="plus.png" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-sm-8" id="info-container">
+          <h1 class="display-4">codewizardshq</h1>
+          <h6>CodeWizardsHQ</h6>
+          <h6 class="text-muted">Product/Service</h6>
+
+        </div>
+      </div>
+
+
+
+      <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3" id="posts">
+
+        <div class="col">
+          <img src="post-1.jpg" class="img-fluid">
+        </div>
+        <div class="col">
+          <img src="post-1.jpg" class="img-fluid">
+        </div>
+        <div class="col">
+          <img src="post-1.jpg" class="img-fluid">
+        </div>
+        <div class="col">
+          <img src="post-1.jpg" class="img-fluid">
+        </div>
+        <div class="col">
+          <img src="post-1.jpg" class="img-fluid">
+        </div>
+        <div class="col">
+          <img src="post-1.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
+
+<!--
+    Homework 1: Finish the Instagram design, and add your personal touch to make it your own.
+
+      Inside #info-container
+        - Add a bootstrap row for profile stats, like followers, following and posts count.
+          - Also, use p tags to add some bio in your instagram page.
+
+          Change the page logo and post images to make it more fun.
+          Give a personal touch by changing the layout of instagram page as per your choice.
+          --><script type="application/javascript" src="/share.js"></script>
